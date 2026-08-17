@@ -228,6 +228,82 @@
     </div>
 </section>
 
+<!-- Poetic & Scenic Trails -->
+<section class="py-5 bg-light-yellow-gradient">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="script-font display-4">Poetic & Scenic Trails</h2>
+            <p class="lead text-muted">Connect with the community, explore routes, and read poetry along the way</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <!-- Card 1: Route Explorer -->
+            <div class="col-lg-6 col-xl-3">
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: var(--gradient-sunset);">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Route Explorer</h3>
+                    <p class="feature-desc">
+                        Discover the scenic trails of Himachal Pradesh with our custom interactive maps.
+                    </p>
+                    <a href="{{ url_for('route_explorer') }}" class="btn btn-warning btn-sm px-4 mt-3" style="border-radius: 20px; font-weight: 600;">
+                        <i class="fas fa-compass me-1"></i> Explore Routes
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Card 2: Travel Companions -->
+            <div class="col-lg-6 col-xl-3">
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: var(--gradient-sunset);">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="feature-title">Travel Companions</h3>
+                    <p class="feature-desc">
+                        Find matching travelers, connect with like-minded companions, and share the beauty.
+                    </p>
+                    <a href="{{ url_for('travel_companions') }}" class="btn btn-warning btn-sm px-4 mt-3" style="border-radius: 20px; font-weight: 600;">
+                        <i class="fas fa-user-friends me-1"></i> Find Partners
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 3: Travel Gallery -->
+            <div class="col-lg-6 col-xl-3">
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: var(--gradient-sunset);">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <h3 class="feature-title">Travel Gallery</h3>
+                    <p class="feature-desc">
+                        Browse and share breathtaking photographs of your destinations, showing the colors of the hills.
+                    </p>
+                    <a href="{{ url_for('travel_gallery') }}" class="btn btn-warning btn-sm px-4 mt-3" style="border-radius: 20px; font-weight: 600;">
+                        <i class="fas fa-camera me-1"></i> View Gallery
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 4: Poetry Corner -->
+            <div class="col-lg-6 col-xl-3">
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: var(--gradient-sunset);">
+                        <i class="fas fa-feather-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Poetry Corner</h3>
+                    <p class="feature-desc">
+                        Immerse yourself in beautiful travel verses, quotes, and community poetry.
+                    </p>
+                    <a href="{{ url_for('poetry_corner') }}" class="btn btn-warning btn-sm px-4 mt-3" style="border-radius: 20px; font-weight: 600;">
+                        <i class="fas fa-feather me-1"></i> Read Poetry
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <!-- Live Demo Section -->
 <section class="demo-section">
     <div class="container">

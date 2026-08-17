@@ -58,10 +58,35 @@
             </a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('index') }}#features">
-              <i class="fas fa-star me-1"></i> Features
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-compass me-1"></i> Explore
             </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="{{ url_for('route_explorer') }}">
+                  <i class="fas fa-map-marked-alt text-warning me-2"></i> Route Explorer
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="{{ url_for('travel_companions') }}">
+                  <i class="fas fa-users text-warning me-2"></i> Travel Companions
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="{{ url_for('travel_gallery') }}">
+                  <i class="fas fa-images text-warning me-2"></i> Travel Gallery
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+                <a class="dropdown-item" href="{{ url_for('poetry_corner') }}">
+                  <i class="fas fa-feather-alt text-warning me-2"></i> Poetry Corner
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('index') }}#kavlin-tribute">
@@ -146,21 +171,18 @@
           <h6 class="text-warning mb-3">Quick Links</h6>
           <ul class="list-unstyled footer-links">
             <li><a href="{{ url_for('index') }}">Home</a></li>
-            <li><a href="{{ url_for('features') }}">Features</a></li>
-            <li><a href="{{ url_for('index') }}#features">Features</a></li>
-            <li>
-              <a href="{{ url_for('index') }}#kavlin-tribute">About Kavlin</a>
-            </li>
+            <li><a href="{{ url_for('features') }}">Features Hub</a></li>
+            <li><a href="{{ url_for('index') }}#kavlin-tribute">About Kavlin</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-4">
-          <h6 class="text-warning mb-3">Services</h6>
+          <h6 class="text-warning mb-3">Explore Trails</h6>
           <ul class="list-unstyled footer-links">
-            <li><a href="#">Bus Booking</a></li>
-            <li><a href="#">Live Tracking</a></li>
-            <li><a href="#">Travel Planning</a></li>
-            <li><a href="#">Poetry Corner</a></li>
+            <li><a href="{{ url_for('route_explorer') }}">Route Explorer</a></li>
+            <li><a href="{{ url_for('travel_companions') }}">Travel Companions</a></li>
+            <li><a href="{{ url_for('travel_gallery') }}">Travel Gallery</a></li>
+            <li><a href="{{ url_for('poetry_corner') }}">Poetry Corner</a></li>
           </ul>
         </div>
 

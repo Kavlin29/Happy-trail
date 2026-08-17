@@ -650,6 +650,47 @@
     <!-- Section Divider -->
     <hr class="section-divider">
 
+    <!-- Social & Poetic Hub Section -->
+    <section class="social-showcase py-5 text-white">
+        <div class="container text-center py-4">
+            <h2 class="script-font display-4 mb-3 text-white" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">The Social & Poetic Hub</h2>
+            <p class="lead mb-5 text-white-50">Where travel meets heart, connection, and scenic trails</p>
+            
+            <div class="row g-4 justify-content-center text-dark">
+                <!-- Card 1: Poetry Corner -->
+                <div class="col-md-5">
+                    <div class="showcase-card h-100">
+                        <div class="showcase-icon mx-auto">
+                            <i class="fas fa-feather-alt"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Poetry Corner</h4>
+                        <p class="text-muted mb-4">Immerse yourself in scenic travel verses, write your own poems, and read thoughts from fellow travelers.</p>
+                        <a href="{{ url_for('poetry_corner') }}" class="btn btn-primary px-4 py-2 mt-2" style="border-radius: 20px;">
+                            <i class="fas fa-feather me-2"></i>Write & Read
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Travel Companions -->
+                <div class="col-md-5">
+                    <div class="showcase-card h-100">
+                        <div class="showcase-icon mx-auto">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Travel Companions</h4>
+                        <p class="text-muted mb-4">Find matching travelers on the same routes, connect, explore profiles, and coordinate journeys together.</p>
+                        <a href="{{ url_for('travel_companions') }}" class="btn btn-primary px-4 py-2 mt-2" style="border-radius: 20px;">
+                            <i class="fas fa-users me-2"></i>Find Companions
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <hr class="section-divider">
+
     <!-- Kavlin Tribute Section -->
     <section id="kavlin-tribute" class="kavlin-tribute">
         <div class="container">

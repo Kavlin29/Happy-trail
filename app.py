@@ -27,7 +27,10 @@ app = Flask(__name__)
 
 # Now the os.getenv calls below will find the variables from your .env file
 app.config['SECRET_KEY'] = os.getenv('HAPPYTRAILS_SECRET_KEY', 'happytrailssecretkey')
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'sqlite:///happytrails.db')
+if os.getenv('VERCEL') == '1' and not os.getenv('DATABASE_URL'):
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///:memory:'
+else:
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'sqlite:///instance/happytrails.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Initialize database

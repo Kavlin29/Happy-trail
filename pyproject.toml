@@ -1,0 +1,5 @@
+[project]
+name = "app"
+version = "0.1.0"
+dependencies = [ "flask", "flask-sqlalchemy", "flask-login", "requests", "werkzeug", "python-dotenv", "psycopg2-binary", "gunicorn" ]
+requires-python = "~=3.13.0"
